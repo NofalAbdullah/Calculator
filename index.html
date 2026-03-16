@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="calc-wrapper">
+  <div class="calculator">
+    <div class="label">CALCULATOR</div>
+    <div class="display">
+      <div class="expression" id="expression"></div>
+      <div class="result" id="result">0</div>
+    </div>
+    <div class="buttons">
+      <button class="btn-clear" onclick="clearAll()">AC</button>
+      <button class="btn-clear" onclick="toggleSign()">+/−</button>
+      <button class="btn-clear" onclick="percent()">%</button>
+      <button class="btn-op" onclick="setOp('/')">÷</button>
+
+      <button class="btn-num" onclick="num('7')">7</button>
+      <button class="btn-num" onclick="num('8')">8</button>
+      <button class="btn-num" onclick="num('9')">9</button>
+      <button class="btn-op" onclick="setOp('*')">×</button>
+
+      <button class="btn-num" onclick="num('4')">4</button>
+      <button class="btn-num" onclick="num('5')">5</button>
+      <button class="btn-num" onclick="num('6')">6</button>
+      <button class="btn-op" onclick="setOp('-')">−</button>
+
+      <button class="btn-num" onclick="num('1')">1</button>
+      <button class="btn-num" onclick="num('2')">2</button>
+      <button class="btn-num" onclick="num('3')">3</button>
+      <button class="btn-op" onclick="setOp('+')">+</button>
+
+      <button class="btn-num btn-zero" onclick="num('0')">0</button>
+      <button class="btn-num btn-dot" onclick="dot()">.</button>
+      <button class="btn-eq" onclick="calculate()">=</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
